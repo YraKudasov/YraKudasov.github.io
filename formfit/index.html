@@ -1,317 +1,35 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FormFit — Privacy Policy</title>
-<style>
-  :root {
-    --bg: #faf7f1;
-    --ink: #1a1713;
-    --ink-muted: #5a5248;
-    --accent: #b8732e;
-    --border: #e4dcce;
-    --card: #ffffff;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0a0806;
-      --ink: #f3efe8;
-      --ink-muted: #a69c8d;
-      --accent: #e3a35c;
-      --border: #2a241c;
-      --card: #141009;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-  }
-  .wrap {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 40px 20px 80px;
-  }
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 8px;
-  }
-  h1 {
-    font-size: 1.6rem;
-    margin: 0;
-  }
-  .updated {
-    color: var(--ink-muted);
-    font-size: 0.9rem;
-    margin: 0 0 28px;
-  }
-  .langs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 28px;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 16px;
-  }
-  .langs button {
-    appearance: none;
-    border: 1px solid var(--border);
-    background: var(--card);
-    color: var(--ink);
-    border-radius: 999px;
-    padding: 8px 16px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    cursor: pointer;
-    min-height: 40px;
-  }
-  .langs button[aria-current="true"] {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #1a1308;
-  }
-  h2 {
-    font-size: 1.15rem;
-    margin: 32px 0 10px;
-  }
-  p, li { color: var(--ink); }
-  .muted { color: var(--ink-muted); }
-  ul { padding-left: 22px; }
-  .lead {
-    font-size: 1.05rem;
-  }
-  .lead strong { color: var(--accent); }
-  hr {
-    border: none;
-    border-top: 1px solid var(--border);
-    margin: 40px 0 20px;
-  }
-  .note {
-    font-size: 0.85rem;
-    color: var(--ink-muted);
-    font-style: italic;
-  }
-  .lang-section { display: none; }
-  .lang-section[aria-hidden="false"] { display: block; }
-  .placeholder {
-    background: rgba(227, 163, 92, 0.18);
-    border-radius: 6px;
-    padding: 1px 6px;
-  }
-</style>
-</head>
-<body>
-<div class="wrap">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>FormFit</title>
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <link rel="icon" href="/formfit/favicon.ico"/></head>
 
-  <div class="langs" role="tablist" aria-label="Language">
-    <button type="button" data-lang="en" role="tab" aria-current="true">English</button>
-    <button type="button" data-lang="ru" role="tab" aria-current="false">Русский</button>
-    <button type="button" data-lang="es" role="tab" aria-current="false">Español</button>
-  </div>
-
-  <!-- ===================== ENGLISH ===================== -->
-  <section class="lang-section" id="lang-en" data-lang="en" aria-hidden="false">
-    <header><h1>FormFit Privacy Policy</h1></header>
-    <p class="updated">Last updated: November 14, 2026</p>
-
-    <p class="lead">FormFit ("the app", "we") respects your privacy. This document explains what data the app processes, where it is stored, and what rights you have. We've written it in plain language, without legal padding, because it's an honest description of how the app actually works: <strong>FormFit never sends your data to any server.</strong></p>
-
-    <h2>1. Short version</h2>
-    <ul>
-      <li>All data (profile, workout program, progress, weight, measurements, progress photos) is stored <strong>only on your device</strong>.</li>
-      <li>The app has <strong>no backend, no account, no sign-up</strong>.</li>
-      <li>Analytics is <strong>fully local, off by default</strong>, and is never transmitted anywhere, even if you turn it on.</li>
-      <li>We show no ads, use no third-party trackers, and never sell or share data with third parties.</li>
-      <li>You can delete all data at any time — with the "Reset demo data" button in the app, or simply by deleting the app from your device.</li>
-    </ul>
-
-    <h2>2. What data the app processes</h2>
-    <p><strong>2.1. Profile and workout data.</strong> On first launch, you provide a name, a goal, an experience level, available equipment, and how many days a week you want to train. The app generates a workout program from this. This entire process happens locally, on your device, with no server ever involved.</p>
-    <p>While you use the app, it also stores locally: your history of completed workouts, sets, reps, and weights; body weight and measurements you log manually; progress on quests, achievements, XP, and your weekly streak; your interface language and settings (Calm Mode, sound).</p>
-
-    <p><strong>2.2. Progress photos.</strong> If you choose to add a progress photo, the app requests access to your device's photo library so you can pick an existing photo. The app <strong>never uses the camera or microphone</strong> — that access is explicitly disabled in the app's configuration. Photos you add are stored only locally on your device and are never uploaded anywhere. You can delete any photo at any time from within the app.</p>
-
-    <p><strong>2.3. Analytics (optional, off by default).</strong> The Profile screen has an "Analytics" toggle. It is off by default. If you turn it on, the app starts anonymously recording a handful of technical events on-device (e.g. "workout completed", "leveled up", "quest claimed") — with no name, photos, or other personal information attached. These events are never transmitted to any server or to anyone outside your device. You can see the exact number of recorded events right in the app and clear them with one tap, or simply turn the toggle back off.</p>
-
-    <h2>3. What data we do NOT collect</h2>
-    <ul>
-      <li>No email address, phone number, or other contact details.</li>
-      <li>No cookies, advertising identifiers, or third-party trackers.</li>
-      <li>No geographic location.</li>
-      <li>No user account and no server — the app simply has no backend.</li>
-      <li>No sharing, selling, or publishing of your data, because it never leaves your device.</li>
-    </ul>
-
-    <h2>4. Where and how data is stored</h2>
-    <p>All data is stored locally on your device using the operating system's standard local storage. This data is only accessible to the FormFit app on this device.</p>
-    <ul>
-      <li>You can delete all app data at any time with the "Reset demo data" button on the Profile screen — this fully clears progress, workout history, photos, and analytics history (language, sound, and Calm Mode settings are preserved, since those are personal preferences, not progress).</li>
-      <li>Fully deleting the app from your device also deletes everything it had stored.</li>
-      <li>Because data is stored locally, we are physically unable to access it, recover it for you if your device is lost, or transmit it anywhere — that's the trade-off of a fully private, offline-first app.</li>
-    </ul>
-
-    <h2>5. Children</h2>
-    <p>FormFit is not intended for children under 13 (or the relevant minimum age in your country) and does not knowingly collect data from children. Because the app never transmits any data off the device, the risk associated with processing children's data is minimal.</p>
-
-    <h2>6. Changes to this policy</h2>
-    <p>If the app's functionality changes in a way that affects how data is handled, we will update this document and post a new date at the top of the page before that feature becomes active.</p>
-
-    <h2>7. Contact</h2>
-    <p>If you have questions about this policy, contact us at: <span class="placeholder">[insert contact email]</span></p>
-
-    <hr>
-    <p class="note">This page also exists in <a href="#" data-lang="ru">Russian</a> and <a href="#" data-lang="es">Spanish</a>.</p>
-  </section>
-
-  <!-- ===================== RUSSIAN ===================== -->
-  <section class="lang-section" id="lang-ru" data-lang="ru" aria-hidden="true">
-    <header><h1>Политика конфиденциальности FormFit</h1></header>
-    <p class="updated">Дата последнего обновления: 14 ноября 2026 г.</p>
-
-    <p class="lead">FormFit (далее — «приложение», «мы») уважает вашу приватность. Этот документ объясняет, какие данные обрабатывает приложение, где они хранятся и какие у вас есть права. <strong>FormFit не отправляет ваши данные ни на какой сервер.</strong></p>
-
-    <h2>1. Короткая версия</h2>
-    <ul>
-      <li>Все данные (профиль, программа тренировок, прогресс, вес, замеры, фото прогресса) хранятся <strong>только на вашем устройстве</strong>.</li>
-      <li>У приложения <strong>нет серверной части, нет аккаунта, нет регистрации</strong>.</li>
-      <li>Аналитика <strong>полностью локальна, по умолчанию выключена</strong> и никуда не передаётся, даже если вы её включите.</li>
-      <li>Мы не показываем рекламу, не используем сторонние трекеры и не продаём и не передаём данные third-party.</li>
-      <li>Удалить все данные можно в любой момент — кнопкой «Сбросить данные демо» в приложении или простым удалением приложения с устройства.</li>
-    </ul>
-
-    <h2>2. Какие данные обрабатывает приложение</h2>
-    <p><strong>2.1. Данные профиля и тренировок.</strong> При первом запуске вы указываете имя, цель, уровень подготовки, доступное оборудование и количество дней в неделю. Приложение генерирует программу тренировок локально, без обращения к серверу.</p>
-    <p>В ходе использования приложение также сохраняет локально: историю выполненных тренировок, подходов, повторений и веса; вес тела и замеры; прогресс по квестам, достижениям, опыту (XP) и серии; язык интерфейса и настройки (спокойный режим, звук).</p>
-
-    <p><strong>2.2. Фото прогресса.</strong> Приложение запрашивает доступ к библиотеке фото, чтобы вы могли выбрать существующее фото. Приложение <strong>не использует камеру и микрофон</strong> — этот доступ явно отключён. Фото хранятся только локально и никогда не загружаются. Вы можете удалить любое фото в любой момент.</p>
-
-    <p><strong>2.3. Аналитика (по желанию, выключена по умолчанию).</strong> В «Профиле» есть переключатель «Аналитика», по умолчанию выключенный. При включении приложение анонимно записывает на устройстве несколько технических событий — без имени, фото или другой личной информации. Эти события не передаются ни на один сервер. Количество записей видно в приложении, их можно очистить одной кнопкой.</p>
-
-    <h2>3. Какие данные мы НЕ собираем</h2>
-    <ul>
-      <li>Email, номер телефона или другие контактные данные.</li>
-      <li>Файлы cookie, рекламные идентификаторы, сторонние трекеры.</li>
-      <li>Геолокацию.</li>
-      <li>Учётную запись или данные на сервере — у приложения нет backend.</li>
-      <li>Передачу, продажу или публикацию данных третьим лицам — данные не покидают устройство.</li>
-    </ul>
-
-    <h2>4. Где и как хранятся данные</h2>
-    <p>Все данные хранятся локально на устройстве. Доступ к ним есть только у приложения FormFit на этом устройстве.</p>
-    <ul>
-      <li>Кнопка «Сбросить данные демо» в Профиле полностью очищает прогресс, тренировки, фото и аналитику (настройки языка, звука и спокойного режима сохраняются).</li>
-      <li>Удаление приложения удаляет все хранившиеся данные.</li>
-      <li>Мы физически не можем получить доступ к вашим данным, восстановить их или передать куда-либо.</li>
-    </ul>
-
-    <h2>5. Дети</h2>
-    <p>FormFit не предназначено для детей младше 13 лет и не собирает сознательно данные детей. Поскольку данные никогда не покидают устройство, риск минимален.</p>
-
-    <h2>6. Изменения политики</h2>
-    <p>Если функциональность изменится так, что это повлияет на обработку данных, мы обновим документ и укажем новую дату перед активацией такой функции.</p>
-
-    <h2>7. Контакты</h2>
-    <p>Вопросы по этой политике: <span class="placeholder">[укажите контактный email]</span></p>
-
-    <hr>
-    <p class="note">Эта страница также доступна на <a href="#" data-lang="en">английском</a> и <a href="#" data-lang="es">испанском</a>.</p>
-  </section>
-
-  <!-- ===================== SPANISH ===================== -->
-  <section class="lang-section" id="lang-es" data-lang="es" aria-hidden="true">
-    <header><h1>Política de privacidad de FormFit</h1></header>
-    <p class="updated">Última actualización: 14 de noviembre de 2026</p>
-
-    <p class="lead">FormFit ("la aplicación", "nosotros") respeta tu privacidad. Este documento explica qué datos procesa la aplicación, dónde se almacenan y qué derechos tienes. <strong>FormFit nunca envía tus datos a ningún servidor.</strong></p>
-
-    <h2>1. Versión corta</h2>
-    <ul>
-      <li>Todos los datos (perfil, programa de entrenamiento, progreso, peso, medidas, fotos de progreso) se almacenan <strong>únicamente en tu dispositivo</strong>.</li>
-      <li>La aplicación <strong>no tiene servidor, ni cuenta, ni registro</strong>.</li>
-      <li>La analítica es <strong>totalmente local, desactivada por defecto</strong>, y nunca se transmite a ningún sitio.</li>
-      <li>No mostramos anuncios, no usamos rastreadores de terceros y nunca vendemos ni compartimos datos.</li>
-      <li>Puedes eliminar todos los datos en cualquier momento, con el botón "Restablecer datos de demostración" o desinstalando la aplicación.</li>
-    </ul>
-
-    <h2>2. Qué datos procesa la aplicación</h2>
-    <p><strong>2.1. Datos de perfil y entrenamiento.</strong> En el primer uso, indicas un nombre, un objetivo, un nivel de experiencia, el equipo disponible y los días de entrenamiento. La aplicación genera el programa localmente, sin servidor.</p>
-    <p>También se almacena localmente: tu historial de entrenamientos, series, repeticiones y pesos; peso corporal y medidas; progreso en misiones, logros, XP y racha semanal; idioma y ajustes (modo calma, sonido).</p>
-
-    <p><strong>2.2. Fotos de progreso.</strong> La aplicación solicita acceso a la biblioteca de fotos para elegir una foto existente. <strong>Nunca usa la cámara ni el micrófono</strong> — ese acceso está desactivado. Las fotos se almacenan solo localmente y nunca se suben a ningún sitio. Puedes eliminarlas en cualquier momento.</p>
-
-    <p><strong>2.3. Analítica (opcional, desactivada por defecto).</strong> El interruptor de "Analítica" en Perfil está desactivado por defecto. Si lo activas, se registran de forma anónima algunos eventos técnicos en el dispositivo, sin datos personales. Nunca se transmiten a ningún servidor. Puedes ver el número de eventos y borrarlos con un toque.</p>
-
-    <h2>3. Qué datos NO recopilamos</h2>
-    <ul>
-      <li>Correo electrónico, teléfono u otros datos de contacto.</li>
-      <li>Cookies, identificadores publicitarios o rastreadores de terceros.</li>
-      <li>Ubicación geográfica.</li>
-      <li>Cuenta de usuario o datos en un servidor — no hay backend.</li>
-      <li>Compartir, vender o publicar tus datos — nunca salen de tu dispositivo.</li>
-    </ul>
-
-    <h2>4. Dónde y cómo se almacenan los datos</h2>
-    <p>Todos los datos se almacenan localmente en tu dispositivo, accesibles solo para FormFit en ese dispositivo.</p>
-    <ul>
-      <li>El botón "Restablecer datos de demostración" en Perfil borra progreso, historial, fotos y analítica (se conservan idioma, sonido y modo calma).</li>
-      <li>Desinstalar la aplicación elimina todo lo almacenado.</li>
-      <li>No podemos acceder a tus datos, recuperarlos ni transmitirlos — es el compromiso de una app totalmente privada y sin conexión.</li>
-    </ul>
-
-    <h2>5. Menores</h2>
-    <p>FormFit no está destinada a menores de 13 años y no recopila a sabiendas sus datos. El riesgo es mínimo porque nada se transmite fuera del dispositivo.</p>
-
-    <h2>6. Cambios en esta política</h2>
-    <p>Si la funcionalidad cambia de forma que afecte al tratamiento de datos, actualizaremos este documento con una nueva fecha antes de activar esa función.</p>
-
-    <h2>7. Contacto</h2>
-    <p>Preguntas sobre esta política: <span class="placeholder">[correo de contacto]</span></p>
-
-    <hr>
-    <p class="note">Esta página también está disponible en <a href="#" data-lang="en">inglés</a> y <a href="#" data-lang="ru">ruso</a>.</p>
-  </section>
-
-</div>
-
-<script>
-  (function () {
-    var buttons = document.querySelectorAll('[data-lang][role="tab"], a[data-lang]');
-    var sections = document.querySelectorAll('.lang-section');
-    function show(lang) {
-      sections.forEach(function (s) {
-        var active = s.getAttribute('data-lang') === lang;
-        s.setAttribute('aria-hidden', active ? 'false' : 'true');
-      });
-      document.querySelectorAll('button[role="tab"]').forEach(function (b) {
-        b.setAttribute('aria-current', b.getAttribute('data-lang') === lang ? 'true' : 'false');
-      });
-      document.documentElement.setAttribute('lang', lang);
-      try { localStorage.setItem('formfit-privacy-lang', lang); } catch (e) {}
-      if (history.replaceState) history.replaceState(null, '', '#' + lang);
-    }
-    buttons.forEach(function (el) {
-      el.addEventListener('click', function (e) {
-        if (el.tagName === 'A') e.preventDefault();
-        show(el.getAttribute('data-lang'));
-      });
-    });
-    var initial = (location.hash || '').replace('#', '');
-    if (!initial) {
-      try { initial = localStorage.getItem('formfit-privacy-lang'); } catch (e) {}
-    }
-    if (!initial) {
-      var nav = (navigator.language || '').slice(0, 2);
-      if (nav === 'ru' || nav === 'es') initial = nav;
-    }
-    if (initial === 'ru' || initial === 'es' || initial === 'en') show(initial);
-  })();
-</script>
+  <body>
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+  <script src="/formfit/_expo/static/js/web/entry-dfda64a00e5d5c783976ca050722936b.js" defer></script>
 </body>
 </html>
